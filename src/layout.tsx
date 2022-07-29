@@ -9,20 +9,22 @@ interface propsWithChildren {
 
 const Componente = ({ children }: propsWithChildren): JSX.Element => {
    return (
-      <><Container height="100%" paddingX={0} maxWidth="container.md" alignSelf="center">
-         <Stack direction="row" height="100%" >
-            <Stack paddingLrft={4} paddingRight={12} spacing={8} borderRightWidth={1} borderRightColor="gray.700">
-               <Link to={"/"}>
-                  <Icon width={6} height={6} as={FaTwitter}></Icon>
+      <><Container  height="100%" paddingX={0} maxWidth="container.lg" alignSelf="center">
+         <Stack direction="row" height="100%" spacing={10}>
+            <Stack paddingLeft={4} paddingRight={12} spacing={10} borderRightWidth={1} borderRightColor="gray.700">
+              <Stack marginTop={4}>
+              <Link to="/">
+                  <Icon width={8} height={8} as={FaTwitter}></Icon>
                </Link>
+              </Stack>
                <Stack spacing={6}>
-                  <Link to={"/"}>
+                  <Link to="/">
                      <Stack direction="row" alignItems="center" spacing={6}>
                         <Icon as={FaHome} width={6} height={6}></Icon>
                         <Text fontWeight="500" fontSize="lg">Inicio</Text>
                      </Stack>
                   </Link>
-                  <Link to={"Message"}>
+                  <Link to="/Explorar">
                      <Stack direction="row" alignItems="center" spacing={6}>
                         <Icon as={FaHashtag} width={6} height={6}></Icon>
                         <Text fontWeight="500" fontSize="lg">Explorar</Text>
@@ -36,10 +38,12 @@ const Componente = ({ children }: propsWithChildren): JSX.Element => {
                      <Icon as={FaEnvelope} width={6} height={6}></Icon>
                      <Text fontWeight="500" fontSize="lg">Notificaciones</Text>
                   </Stack>
-                  <Stack direction="row" alignItems="center" spacing={6}>
+                 <Link to="/message">
+                 <Stack direction="row" alignItems="center" spacing={6}>
                      <Icon as={FaBookmark} width={6} height={6}></Icon>
                      <Text fontWeight="500" fontSize="lg">Mensajes</Text>
                   </Stack>
+                 </Link>
                   <Stack direction="row" alignItems="center" spacing={6}>
                      <Icon as={FaList} width={6} height={6}></Icon>
                      <Text fontWeight="500" fontSize="lg">Guardados</Text>
