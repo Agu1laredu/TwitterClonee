@@ -2,7 +2,7 @@ import React from "react";
 
 const  Explorar: React.FC = () => {
     return (
-        <div>Mensaje</div>
+        <div>Explorar</div>
     );
 }
 
