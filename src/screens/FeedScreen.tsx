@@ -28,11 +28,11 @@ const FeedScreen: React.FC = () => {
                             <Textarea fontSize="xl" fontWeight="500" variant="unstyled" />
                             <Stack alignItems="center" direction="row" justifyContent="space-between">
                                 <Stack direction="row">
-                                    <Icon as={BsImage} />
-                                    <Icon as={AiOutlineGif} />
-                                    <Icon as={RiBarChartHorizontalLine} />
-                                    <Icon as={AiOutlineSmile} />
-                                    <Icon as={AiOutlineCalendar} />
+                                    <Icon as={BsImage} height={6} width={6} />
+                                    <Icon as={AiOutlineGif} height={6} width={6} />
+                                    <Icon as={RiBarChartHorizontalLine} height={6} width={6}  />
+                                    <Icon as={AiOutlineSmile} height={6} width={6} />
+                                    <Icon as={AiOutlineCalendar} height={6} width={6} />
                                 </Stack>
                                 <Button onClick={() => setCount((count) => count + 1)} colorScheme="primary">Twittear</Button>
                             </Stack>
