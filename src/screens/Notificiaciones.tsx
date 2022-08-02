@@ -5,7 +5,7 @@ import { BsStar } from 'react-icons/bs';
 const  Notificaciones: React.FC = () => {
     return (
         <Stack overflow='auto' width='70%'  maxHeight='100vh'>
-        <Stack spacingX={4} paddingX={2}>
+        <Stack spacing={4} paddingX={2}>
             <Stack  paddingX={4} alignItems='center' direction='row' justifyContent='space-between' paddingY={2} >
             <Text fontWeight='bold' fontSize='lg' marginBottom={2}>Inico</Text>
             <Stack width={10}>

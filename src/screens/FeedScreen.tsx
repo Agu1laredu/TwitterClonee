@@ -14,7 +14,7 @@ const FeedScreen: React.FC = () => {
 
         <Stack overflow='auto' width='70%' maxHeight='100vh'>
             <Stack >
-                <Stack divider={<StackDivider />} spacingX={4} paddingX={2}>
+                <Stack divider={<StackDivider />} spacing={4} paddingX={2}>
                     <Stack paddingX={4} alignItems='center' direction='row' justifyContent='space-between' paddingY={2} >
                         <Text fontWeight='bold' fontSize='lg' marginBottom={2}>Inico</Text>
                         <Stack width={10}>
@@ -30,9 +30,9 @@ const FeedScreen: React.FC = () => {
                                 <Stack direction='row'>
                                     <Icon as={BsImage} height={6} width={6} />
                                     <Icon as={AiOutlineGif} height={6} width={6} />
-                                    <Icon as={RiBarChartHorizontalLine} height={6} width={6}  />
+                                    <Icon as={RiBarChartHorizontalLine} height={6} width={6} />
                                     <Icon as={AiOutlineSmile} height={6} width={6} />
-                                    <Icon as={AiOutlineCalendar} height={6} width={6}  />
+                                    <Icon as={AiOutlineCalendar} height={6} width={6} />
                                 </Stack>
                                 <Button onClick={() => setCount((count) => count + 1)} colorScheme='primary'>Twittear</Button>
                             </Stack>
@@ -43,7 +43,7 @@ const FeedScreen: React.FC = () => {
                 <Divider />
                 <Stack divider={<StackDivider />}
                     flex={1}
-                    maxHeigth='100vh'
+                    maxHeight='100vh'
                     overflowY='auto'
                     spacing={0}
                     sx={{
@@ -54,13 +54,13 @@ const FeedScreen: React.FC = () => {
                     {tweets.map((index) => (
                         <Stack onClick={() => setCount(count => count - 1)}
                             key={index} direction='row' maxWidth={480} padding={4} spacing={4} width='100%'>
-                            <SkeletonCircle heigth={12} minHeigth={12} minWidth={12} widtth={12} />
+                            <SkeletonCircle height={12} minHeight={12} minWidth={12} width={12} />
                             <Stack spacing={2} width='100%'>
-                                <Stack alingItems='flex-end' direction='row' spacing={1}>
+                                <Stack alignItems='flex-end' direction='row' spacing={1}>
                                     <Skeleton height={6} width='120px' />
                                     <Skeleton height={3} width='80px' />
                                 </Stack>
-                                <SkeletonText heigth='100%' noOfLines={6} spacing={4} />
+                                <SkeletonText height='100%' noOfLines={6} spacing={4} />
                             </Stack>
                         </Stack>
                     )
