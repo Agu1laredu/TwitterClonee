@@ -1,6 +1,8 @@
 import React from "react";
 import { Image,Icon, Skeleton, SkeletonText, SkeletonCircle, Text, Stack,Button, StackDivider,Textarea } from "@chakra-ui/react";
-import { BsStar } from "react-icons/bs";
+import { BsImage, BsStar } from "react-icons/bs";
+import {AiOutlineGif,AiOutlineSmile,AiOutlineCalendar} from "react-icons/ai"; 
+import {RiBarChartHorizontalLine} from "react-icons/ri"; 
 
 const FeedScreen: React.FC = () => {
     return (
@@ -20,11 +22,11 @@ const FeedScreen: React.FC = () => {
                     <Textarea/>
                     <Stack direction="row"  justifyContent="space-between">
                         <Stack direction="row">
-                            <Icon as={BsStar}/>
-                            <Icon as={BsStar}/>
-                            <Icon as={BsStar}/>
-                            <Icon as={BsStar}/>
-                            <Icon as={BsStar}/>
+                            <Icon  as={BsImage}/>
+                            <Icon as={AiOutlineGif}/>
+                            <Icon as={RiBarChartHorizontalLine}/>
+                            <Icon as={AiOutlineSmile}/>
+                            <Icon as={AiOutlineCalendar}/>
                         </Stack>
                         <Button colorScheme="primary">Twittear</Button>
                     </Stack>
