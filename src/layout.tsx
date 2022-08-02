@@ -1,9 +1,10 @@
 import React from "react";
-import { Container, Stack, Icon, Text, Box ,Button, useColorMode ,useColorModeValue} from "@chakra-ui/react";
+import { Container, Stack, Icon, Text, Box ,Button, useColorMode ,useColorModeValue, Image} from "@chakra-ui/react";
 import { FaTwitter,FaHome,FaHashtag ,FaEnvelope, FaBookmark, FaUser, FaEllipsisH, FaBell } from "react-icons/fa";
 import { ImUsers } from "react-icons/im";
 
 import { Link } from "react-router-dom";
+import Perfil from "assets/perfil.jpg";
 
 interface propsWithChildren {
    children: React.ReactNode
@@ -17,7 +18,10 @@ const Componente = ({ children }: propsWithChildren): JSX.Element => {
    return (
       <><Container  height="100%" paddingX={0} maxWidth="container.lg" alignSelf="center">
          <Stack direction="row" height="100%" spacing={10}>
-            <Stack paddingLeft={4} paddingRight={12} spacing={10} borderRightWidth={1} borderRightColor="gray.700">
+
+           <Stack justifyContent="space-between" >
+
+           <Stack paddingLeft={4} paddingRight={12} spacing={10} borderRightWidth={1} borderRightColor="gray.700">
               <Stack marginTop={4}>
               <Link to="/">
                   <Icon color={logoColor} width={8} height={8} as={FaTwitter} onClick={toggleColorMode}/>
@@ -75,7 +79,21 @@ const Componente = ({ children }: propsWithChildren): JSX.Element => {
                </Stack>
                <Button size="lg" colorScheme="primary">Twittear</Button>
             </Stack>
-            <Box padding={4}>
+            <Stack paddingX={6} paddingY={6}  direction="row" alignItems="center" justifyContent="space-between">
+               <Stack direction="row" alignItems="center">
+               <Image borderRadius="50%" height={12} width={12} src="https://tse2.mm.bing.net/th?id=OIP.MRFSIVBGZ6xa6cCsNKWHvwHaFY&pid=Api" />
+                  <Stack spacing={0}>
+                     <Text fontWeight="bold"fontSize="sm" >EDD</Text>
+                     <Text fontSize="sm" color="gray.500">@Agu1larjesus</Text>
+                  </Stack>
+               </Stack>
+               <Stack  padding={5}>
+               <Icon marginBottom={4} as={FaEllipsisH}/>
+               </Stack>
+            </Stack>
+
+           </Stack>
+            <Box padding={4} width="100%">
                {children}
             </Box>
          </Stack>
