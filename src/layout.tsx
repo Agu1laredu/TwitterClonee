@@ -4,7 +4,6 @@ import { FaTwitter,FaHome,FaHashtag ,FaEnvelope, FaBookmark, FaUser, FaEllipsisH
 import { ImUsers } from "react-icons/im";
 
 import { Link } from "react-router-dom";
-import Perfil from "assets/perfil.jpg";
 
 interface propsWithChildren {
    children: React.ReactNode
