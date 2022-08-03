@@ -12,7 +12,7 @@ const FeedScreen: React.FC = () => {
     const tweets = React.useMemo(() => new Array(count).fill(true).map((_, index) => index), [count]);
     return (
 
-        <Stack overflow='auto' width='70%' maxHeight='100vh'>
+        <Stack overflow='auto' width='70%' maxHeight='90vh'>
             <Stack >
                 <Stack divider={<StackDivider />} spacing={4} paddingX={2}>
                     <Stack paddingX={4} alignItems='center' direction='row' justifyContent='space-between' paddingY={2} >
@@ -43,7 +43,7 @@ const FeedScreen: React.FC = () => {
                 <Divider />
                 <Stack divider={<StackDivider />}
                     flex={1}
-                    maxHeight='100vh'
+                    maxHeight='90vh'
                     overflowY='auto'
                     spacing={0}
                     sx={{
